@@ -17,6 +17,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--<link href="web/css/style.css" rel="stylesheet" type="text/css" media="all" />-->
 <script src="web/js/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="web/css/popup.css">
+<script type="text/javascript" src="web/js/popup.js"></script>
+<script type="text/javascript">
+Shadowbox.init({
+// let's skip the automatic setup because we don't have any
+// properly configured link elements on the page
+//* Shadowbox.js, version 3.0.3
+//* http://shadowbox-js.com/
+// * Copyright 2007-2010, Michael J. I. Jackson
+// * Date: 2011-05-15 13:44:31 +0000
+    skipSetup: true
+});
+window.onload = function() {
+
+    // open a welcome message as soon as the window loads
+    Shadowbox.open({
+        content:    '<div align="center"><a onclick=Shadowbox.close()" target="_blank" href="http://ktracaengemark.com.br/site"><img src="web/images/popup.jpg" width="250" height="220" alt="" border="0"/></a></div>',
+        player:     "html",
+        title:      "",
+        height:     295,
+        width:      300
+    });
+
+};
+</script>
 <script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
@@ -25,19 +50,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			});
 		});
 	</script>
+
 <!-- grid-slider -->
 <script type="text/javascript" src="web/js/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="web/js/jquery.contentcarousel.js"></script>
 <script type="text/javascript" src="web/js/jquery.easing.1.3.js"></script>
 <!-- //grid-slider -->
-</head>
-	<!--<script>
-    window.open("web/images/popup.jpg", "", "width=300,height=145,left=" + (document.documentElement.clientWidth - 300) / 2 + ",top=" + (document.documentElement.clientHeight - 145) / 2);
-	msg = "Gostou do site ? Conheça a Ktraca Engenharia e Marketing.";
-	alert(msg);
 
-	</script>-->
+</head>
 <body>
+
  <!-- start header_top -->
  	<!-- start menu -->
       <div class="menu">
@@ -91,7 +113,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>-->
 		  <!--</div>-->
 		  <div class="header-arrow">
-		     <a href="#menu" class="class scroll"><span> </span </a>
+		     <a href="#flexiselDemo3" class="class scroll"><span> </span </a>
 		  </div>
 	    </div>
 	  </div>
