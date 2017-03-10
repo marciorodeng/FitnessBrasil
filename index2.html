@@ -14,29 +14,6 @@
 <link rel="stylesheet" type="text/css" href="web/css/popup.css">
 <script type="text/javascript" src="web/js/popup.js"></script>
 <script type="text/javascript">
-Shadowbox.init({
-// let's skip the automatic setup because we don't have any
-// properly configured link elements on the page
-//* Shadowbox.js, version 3.0.3
-//* http://shadowbox-js.com/
-// * Copyright 2007-2010, Michael J. I. Jackson
-// * Date: 2011-05-15 13:44:31 +0000
-    skipSetup: true
-});
-window.onload = function() {
-
-    // open a welcome message as soon as the window loads
-    Shadowbox.open({
-        content:    '<div align="center"><a onclick=Shadowbox.close()" target="_blank" href="http://ktracaengemark.com.br/site"><img src="web/images/popup.jpg" width="250" height="220" alt="" border="0"/></a></div>',
-        player:     "html",
-        title:      "",
-        height:     295,
-        width:      300
-    });
-
-};
-</script>
-<script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
 				event.preventDefault();
